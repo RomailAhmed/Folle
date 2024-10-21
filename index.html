@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rock+Salt&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        Free Delivery In Pakistan
+    </div>
+
+    <!-- Main Header inside a container -->
+    <header class="main-header">
+        <div class="cont">
+            <!-- Logo (Left Side) -->
+            <div class="brand">Folle</div>
+    
+            <!-- Hamburger Icon for mobile screens (Right Side) -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- Navigation Menu (hidden in mobile view) -->
+            <nav id="menu" class="nav-closed">
+                <a href="#">Home</a>
+                <a href="#">Catalog</a>
+                <a href="#">Contact</a>
+                <a href="#">About us</a>
+                <a href="#"><img src="Vector.png" alt="Cart"></a>
+            </nav>
+        </div>
+    </header>
+    
+    
+    
+    <div class="container">
+        <div class="product-section">
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <div class="main-image">
+                    <img src="Container (1).png" alt="Main Product Image">
+                </div>
+                <div class="thumbnail-gallery">
+                    <img src="Container (2).png" alt="Thumbnail 1">
+                    <img src="Container (3).png" alt="Thumbnail 2">
+                    <img src="Container (4).png" alt="Thumbnail 3">
+                    <img src="Container (5).png" alt="Thumbnail 4">
+                </div>
+            </div>
+    
+            <!-- Product Details -->
+            <div class="product-details">
+                <h1 class="product-title">Folle Book Tote</h1>
+                <p class="product-subtitle">Moonlit Masquerade (Blue)</p>
+    
+                <!-- Price Section -->
+                <div class="price-section">
+                    <span class="old-price">Rs. 7,000.00 PKR</span>
+                    <span class="new-price">Rs. 3,999.00 PKR</span>
+                </div>
+    
+                <!-- Color Options -->
+                <div class="color-section">
+                    <span class="color-label">Color:</span>
+                    <div class="color-options">
+                        <img src="Ellipse 2.png" alt="Color Option 1">
+                        <img src="Frame 1618873191.png" alt="Color Option 2">
+                    </div>
+                </div>
+                
+                <!-- Quantity Section with buttons -->
+               <!-- Quantity Section -->
+<div class="quantity-section">
+    <label for="quantity">Quantity:</label><br>
+    <div class="quantity-input">
+        <button class="quantity-btn minus">-</button>
+        <input type="number" id="quantity" value="2" min="1">
+        <button class="quantity-btn plus">+</button>
+    </div>
+</div>
+
+                
+    
+                <div class="cta-buttons">
+                    <button class="add-to-cart">Add to cart</button>
+                    <button class="buy-now">Buy with cash on delivery</button>
+                </div>
+    
+                <p class="sale-timer">Sales Ends in 11 Hours</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="section-container">
+        <!-- Image Section -->
+        <div class="image-box">
+            <img src="folle product 1.png" alt="Bag Image">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-box">
+             
+            <div class="feature">
+                <h4>Spacious & Versatile</h4>
+                <p>With dimensions of 16x12.6x6.3 inches, our tote offers ample space for your essentials, making it perfect for work, travel, or everyday use.</p>
+            </div>
+
+            <div class="feature">
+                <h4>Eco-Friendly & Durable</h4>
+                <p>Made from sustainable canvas, this tote is both environmentally friendly and built to last. "Treat the Earth as though we intend to stay here."</p>
+            </div>
+
+            <div class="feature">
+                <h4>Free Delivery & Easy Returns</h4>
+                <p>Enjoy free delivery in 2-4 days across Pakistan. Not satisfied? Get a hassle-free refund within 24 hours, plus a one-year stitch warranty!</p>
+            </div>
+        </div>
+    </div>
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-slider-wrapper">
+                <div class="testimonial-slider" id="slider">
+                    <!-- Card 1 -->
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <img src="car.png" alt="Client 1" class="client-img">
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <img src="car.png" alt="Client 2" class="client-img">
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <img src="car.png" alt="Client 3" class="client-img">
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <img src="car.png" alt="Client 4" class="client-img">
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <img src="car.png" alt="Client 5" class="client-img">
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <img src="car.png" alt="Client 6" class="client-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Centered controls -->
+            <div class="slider-controls">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                <button class="write-review">Write a review</button>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
+    
+<section class="handmade-craftsmanship-section">
+    <div class="custom-container">
+        <!-- Tab Navigation -->
+        <ul class="tabs-nav">
+            <li class="tab active" data-tab="tab-1">Handmade Craftsmanship</li>
+            <li class="tab" data-tab="tab-2">About Folle</li>
+            <li class="tab" data-tab="tab-3">Additional Information</li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tabs-content">
+            <div id="tab-1" class="tab-content active">
+                <!-- First Tab Content (Images and Text) -->
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="11 (1).png" alt="Big Image" class="big-image">
+                        </div>
+                        <div class="col-4">
+                            <div class="small-images-container">
+                                <img src="22.png" alt="Small Image 1" class="small-image small-image-top">
+                                <img src="33.png" alt="Small Image 2" class="small-image small-image-bottom">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="details-section">
+                                <h2>Handmade Craftsmanship</h2>
+                                <p class="stock-status">2 bags left... Hurry up!</p>
+
+                                <p class="description">
+                                    More than just a bag, this is an investment in timeless style, quality craftsmanship, and a touch of everyday magic.
+                                    Designed to be your reliable companion for any occasion, it effortlessly blends fashion and functionality.
+                                </p>
+                                <p class="order-message">
+                                    <strong>Order yours today</strong> and let the compliments roll in as you carry confidence wherever you go.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Tabs Content -->
+            <div id="tab-2" class="tab-content">
+                <p>About Folle - This content can be customized as per your need.</p>
+            </div>
+            <div id="tab-3" class="tab-content">
+                <p>Additional Information - This content can be customized as well.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="footer-section">
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <!-- Left section (Logo and Subscribe) -->
+                <div class="footer-left">
+                    <h2 class="footer-logo">Folle</h2>
+                    <p class="footer-subscribe-title">Stay In touch</p><br>
+                    <form class="footer-subscribe-form">
+                        <input type="email" placeholder="Enter Your Email" class="subscribe-input" required>
+                        <button type="submit" class="subscribe-button">Subscribe</button>
+                    </form>
+                    <br><br><br> 
+                    <p class="footer-copyright">© 2024 folle - All Right Reserved</p>
+                </div>
+    
+                <!-- Middle section (Footer Links) -->
+                <div class="footer-right">
+                    <div class="footer-column">
+                        <ul class="footer-links-group">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Catalog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <ul class="footer-links-group">
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column footer-right-links">
+                        <ul class="footer-links-group">
+                            <li><a href="#">Shipping Conditions</a></li>
+                            <li><a href="#">Contact and address</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Social media links -->
+            <div class="footer-social">
+                <div class="footer-talk">
+                    <p>Talk to us</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="in.png" alt="Instagram"></a>
+                    <a href="#"><img src="tw.png" alt="Twitter"></a>
+                    <a href="#"><img src="li.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+
+    <script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+    // Toggle classes to open/close the menu
+    if (menu.classList.contains('nav-closed')) {
+        menu.classList.remove('nav-closed');
+        menu.classList.add('nav-open');
+    } else {
+        menu.classList.remove('nav-open');
+        menu.classList.add('nav-closed');
+    }
+
+    // Add animation to the hamburger icon
+    menuToggle.classList.toggle('active');
+}
+
+
+
+    </script>
+
+
+    <script>
+        let currentSlide = 0;
+
+function getSlidesToShow() {
+    return window.innerWidth <= 768 ? 2 : 3; // 2 images on small screens, 3 on larger
+}
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.testimonial');
+    const totalSlides = slides.length;
+    const slidesToShow = getSlidesToShow();
+    const maxIndex = Math.ceil(totalSlides / slidesToShow) - 1;
+
+    if (index > maxIndex) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = maxIndex;
+    } else {
+        currentSlide = index;
+    }
+
+    const slider = document.getElementById('slider');
+    slider.style.transform = `translateX(-${currentSlide * (100 / slidesToShow)}%)`;
+}
+
+function moveSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+// Automatically move to the next slide every 5 seconds
+setInterval(() => {
+    moveSlide(1);
+}, 5000);
+
+// Adjust slides on resize
+window.addEventListener('resize', () => {
+    showSlide(currentSlide); // Recalculate position on resize
+});
+
+
+
+    </script>
+
+
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+        // Remove active class from all tabs
+        tabs.forEach(item => item.classList.remove('active'));
+        // Add active class to the clicked tab
+        this.classList.add('active');
+        
+        // Hide all tab contents
+        tabContents.forEach(content => content.classList.remove('active'));
+        // Show content of the clicked tab
+        const tabId = this.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+    });
+});
+
+
+
+    </script>
+    <script>// JavaScript to handle plus/minus button clicks
+       // JavaScript to handle plus/minus button clicks
+document.querySelector('.minus').addEventListener('click', function() {
+    let quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+    }
+});
+
+document.querySelector('.plus').addEventListener('click', function() {
+    let quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+});
+
+        </script>
+</body>
+</html>
