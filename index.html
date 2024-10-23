@@ -40,20 +40,18 @@
         </div>
     </header>
     
-    
-    
     <div class="container">
         <div class="product-section">
             <!-- Image Gallery -->
             <div class="image-gallery">
                 <div class="main-image">
-                    <img src="Container (1).png" alt="Main Product Image">
+                    <img id="mainImage" src="Container (1).png" alt="Main Product Image">
                 </div>
-                <div class="thumbnail-gallery">
-                    <img src="Container (2).png" alt="Thumbnail 1">
-                    <img src="Container (3).png" alt="Thumbnail 2">
-                    <img src="Container (4).png" alt="Thumbnail 3">
-                    <img src="Container (5).png" alt="Thumbnail 4">
+                <div class="thumbnail-gallery" id="thumbnailGallery">
+                    <img src="Container (2).png" alt="Thumbnail 1" onclick="changeImage('Container (2).png', this)">
+                    <img src="Container (3).png" alt="Thumbnail 2" onclick="changeImage('Container (3).png', this)">
+                    <img src="Container (4).png" alt="Thumbnail 3" onclick="changeImage('Container (4).png', this)">
+                    <img src="Container (5).png" alt="Thumbnail 4" onclick="changeImage('Container (5).png', this)">
                 </div>
             </div>
     
@@ -72,23 +70,20 @@
                 <div class="color-section">
                     <span class="color-label">Color:</span>
                     <div class="color-options">
-                        <img src="Ellipse 2.png" alt="Color Option 1">
-                        <img src="Frame 1618873191.png" alt="Color Option 2">
+                        <img src="Ellipse 2.png" alt="Color Option 1" onclick="changeColorImage('Container (1).png', this)" class="color-option">
+                        <img src="Ellipse 1.png" alt="Color Option 2" onclick="changeColorImage('Container (2).png', this)" class="color-option">
                     </div>
                 </div>
-                
-                <!-- Quantity Section with buttons -->
-               <!-- Quantity Section -->
-<div class="quantity-section">
-    <label for="quantity">Quantity:</label><br>
-    <div class="quantity-input">
-        <button class="quantity-btn minus">-</button>
-        <input type="number" id="quantity" value="2" min="1">
-        <button class="quantity-btn plus">+</button>
-    </div>
-</div>
-
-                
+    
+                <!-- Quantity Section -->
+                <div class="quantity-section"> 
+                    <label for="quantity">Quantity:</label><br>
+                    <div class="quantity-input"> 
+                        <button class="quantity-btn minus">-</button> 
+                        <input type=" " id="quantity" value="2" min="1"> 
+                        <button class="quantity-btn plus">+</button> 
+                    </div>
+                </div>
     
                 <div class="cta-buttons">
                     <button class="add-to-cart">Add to cart</button>
@@ -100,7 +95,41 @@
         </div>
     </div>
     
+    <script>
+        function changeImage(imageSrc, thumbnail) {
+            document.getElementById('mainImage').src = imageSrc;
+            // Update the thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnail-gallery img');
+            thumbnails.forEach(img => img.classList.remove('active'));
+            thumbnail.classList.add('active'); // Highlight the selected thumbnail
+        }
+    
+        function changeColorImage(imageSrc, colorOption) {
+            document.getElementById('mainImage').src = imageSrc;
+    
+            // Update thumbnails to match the selected color
+            const thumbnails = document.querySelectorAll('.thumbnail-gallery img');
+            thumbnails.forEach(img => img.classList.remove('active'));
+    
+            // Update the size of color options
+            const colorOptions = document.querySelectorAll('.color-options .color-option');
+            colorOptions.forEach(option => {
+                option.classList.remove('selected');
+                option.style.width = '40px'; // Reset size
+                option.style.height = '40px'; // Reset size
+            });
+    
+            // Set the selected option's styles
+            colorOption.classList.add('selected');
+            colorOption.style.width = '40px'; // Selected size
+            colorOption.style.height = '40px'; // Selected size
+        }
+    </script>
+    
 
+
+    
+    
     <div class="section-container">
         <!-- Image Section -->
         <div class="image-box">
@@ -224,7 +253,7 @@
                 </div>
             </div>
 
-            <!-- Other Tabs Content -->
+          
             <div id="tab-2" class="tab-content">
                 <p>About Folle - This content can be customized as per your need.</p>
             </div>
@@ -277,7 +306,7 @@
                 </div>
             </div>
     
-            <!-- Social media links -->
+             
             <div class="footer-social">
                 <div class="footer-talk">
                     <p>Talk to us</p>
@@ -288,9 +317,9 @@
                     <a href="#"><img src="tw.png" alt="Twitter"></a>
                     <a href="#"><img src="li.png" alt="LinkedIn"></a>
                 </div>
-            </div>
+            </div> 
         </div>
-    </footer>
+    </footer> 
     
     
     

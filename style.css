@@ -64,7 +64,7 @@ a{
 /* Logo (left side) */
 .main-header .brand {
     font-family: 'Andalus';
-    font-size: 42px;
+    font-size: 42px !important;
     font-weight: bold;
 }
 
@@ -342,17 +342,17 @@ nav {
     margin: 0; /* Remove margin */
 }
 
-/* Adjust styles for the minus button */
+ 
 .quantity-btn.minus {
-    border-radius: 5px 0 0 5px; /* Rounded corners */
+    border-radius: 5px 0 0 5px;  
 }
 
-/* Adjust styles for the plus button */
+ 
 .quantity-btn.plus {
-    border-radius: 0 5px 5px 0; /* Rounded corners */
+    border-radius: 0 5px 5px 0;  
 }
 
-/* CTA Buttons */
+ 
 .cta-buttons {
     display: flex;
     flex-direction: column;
@@ -380,7 +380,7 @@ nav {
     border-radius: 5px;
 }
 
-/* Sale Timer */
+ 
 .sale-timer {
     margin-top: 20px;
     font-size: 14px;
@@ -563,6 +563,23 @@ nav {
 
  
 
+
+
+
+.color-options img {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.color-options img.selected {
+    border: 2px solid #000; /* Change to your desired border color */
+    border-radius: 50%; /* Circle border */
+}
+
+.thumbnail-gallery img.active {
+    border: 2px solid #000; /* Highlight active thumbnail */
+    opacity: 0.7; /* Optional: fade effect */
+}
 
 
 
